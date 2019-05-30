@@ -7,7 +7,7 @@ export NAME:=main
 # EXE:=.exe
 #--------------------
 export TESTS
-export CFLAGS:=-Wall -std=c11 -pedantic -Wextra -I../include $(CFLAGS)
+export CFLAGS:=-Wall -std=c11 -pedantic -Wextra -Wno-implicit-fallthrough -I../include $(CFLAGS)
 export LDLIBS:=-lm
 PREFIX:=${or $(PREFIX),$(PREFIX),/usr/local}
 includes=${wildcard include/*.h}
