@@ -1,11 +1,5 @@
-# Поменяй эту переменную на название своей программы
 export NAME:=main
-# Так как многие пользуются Windows то переменная ниже
-# будет содержать расширение испольняемых файлов Windows,
-# которое можно убрать, если пользуешься MacOS или Linux.
-# Просто закоментируй, если не нужно.
-# EXE:=.exe
-#--------------------
+
 export TESTS
 export CFLAGS:=-Wall -std=c11 -pedantic -Wextra -Wno-implicit-fallthrough -I../include $(CFLAGS)
 export LDLIBS:=-lm
